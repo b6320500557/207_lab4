@@ -11,7 +11,7 @@ int main()
             scanf("%d",&coins[i][j]);
         }
     }
-     int total=0,max=0,min=0,maxx=0,minn=0;
+     int total=0,max=0,min=2000,maxx=0,minn=0;
     for(i=0; i<n-2 ;i++)
     {
         for(j=i; j<i+3; j++)
@@ -23,7 +23,7 @@ int main()
             max = total;
             maxx = i;
         }
-        if(min >= total)
+        else if(min > total)
         {
             min = total;
             minn = i;
