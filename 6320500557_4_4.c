@@ -16,7 +16,7 @@ int main()
                 k++;
             }
         }
-           if(k==11 && j==0)
+           if(k==11 || j==0)
         {
             printf ("%c",toupper(word2[0]));
         }
