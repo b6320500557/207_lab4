@@ -6,9 +6,16 @@ int main()
     scanf("%s",word);
     char *word2;
     word2 = strtok(word," ");
-    if(word2)
+    int i,j,k=0;
+    while(word2 != NULL)
     {
-        printf("%s",word2);
+        for(i=0; i<11; i++)
+        {
+            if (strcmp(word2,x[i]))
+            {
+                k++;
+            }
+        }
     }
     return 0;
 }
