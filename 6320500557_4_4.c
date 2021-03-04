@@ -16,6 +16,12 @@ int main()
                 k++;
             }
         }
+           if(k==11 && j==0)
+        {
+            printf ("%c",toupper(word2[0]));
+        }
+            word2 = strtok(NULL," ");
+            j++,k=0;
     }
     return 0;
 }
