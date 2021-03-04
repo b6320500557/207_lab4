@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <string.h>
+#include<ctype.h>
 int main()
 {
     char word[1001],x[11][5]={"i","of","the","on","at","for","with","a","an","in","and"};
-    scanf("%s",word);
+    scanf("%[^\n]s",word);
     char *word2;
     word2 = strtok(word," ");
     int i,j,k=0;
