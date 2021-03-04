@@ -18,6 +18,18 @@ int main()
         {
             total += (coins[j][0]*4)+(coins[j][1]*2)+(coins[j][2]*1);
         }
+         if(max < total)
+        {
+            max = total;
+            maxx = i;
+        }
+        if(min >= total)
+        {
+            min = total;
+            minn = i;
+        }
+        total = 0;
     }
+    printf("%d %d",maxx+1,minn+1);
     return 0;
 }
